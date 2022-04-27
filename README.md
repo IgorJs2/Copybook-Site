@@ -14,7 +14,7 @@ To build and run this app locally you will need a few things:
 - Clone the repository
  
 ```
-git clone https://github.com/balajihambeere/html-page-generator-mern-app.git <project_name>
+git clone https://github.com/IgorJs2/Copybook-Site.git
 ```
 - Install dependencies
 
