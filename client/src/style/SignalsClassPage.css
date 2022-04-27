@@ -1,0 +1,149 @@
+.signals-block {
+  width: 50%;
+  height: fit-content;
+  margin: 15vh 15% 0 25%;
+  display: flex;
+  flex-direction: column;
+  background: #6093c1;
+  border-radius: 25px;
+  align-items: center;
+}
+
+.signals-block-title,
+.signals-block-message,
+.signals-block-button,
+.signals-block-text,
+.signals-block-titl,
+.signals-block-file {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #ffffff;
+}
+
+.signals-block-title {
+  margin-top: 5%;
+}
+.signals-block-titl {
+  padding-left: 2%;
+}
+.signals-block-text {
+  padding-left: 2%;
+  resize: none;
+  padding-top: 2%;
+}
+.signals-block-message {
+  margin-top: 4%;
+}
+
+.signals-block-button {
+  margin-top: 12%;
+}
+
+.signals-block-text,
+.signals-block-titl {
+  width: 95%;
+  height: 66.93px;
+  background: #5380aa;
+  border: none;
+}
+
+.signals-block-text {
+  height: 270px;
+}
+
+.signals-block-button {
+  width: 80%;
+  height: 10vh;
+  border: none;
+  text-align: center;
+  justify-content: center;
+  background: #66d9bd;
+  border-radius: 25px;
+  margin: 5% 0;
+}
+
+.signals-block-button:hover {
+  background: #5abca5;
+}
+
+.signals-block-button:active {
+  background-color: #5abca5;
+  box-shadow: 0 5px #666;
+}
+
+/* Student */
+
+li {
+  list-style: none;
+}
+
+.signals-block-main {
+  width: 85%;
+  margin: 12vh 5.5% 0 9.5%;
+  height: 90vh;
+}
+
+.signals-block-main-post {
+  float: left;
+  width: 30%;
+  height: 8rem;
+  background: #6093c1;
+  border-radius: 25px;
+  margin: 1% 2%;
+  border: none;
+  border-radius: 25px;
+}
+
+.signals-block-main-name,
+.signals-block-main-data {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--small_text);
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 3%;
+  padding-top: 2%;
+  color: #ffffff;
+}
+
+.signals-block-main-data {
+  width: 100%;
+  height: 6rem;
+
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  text-align: bottom;
+}
+
+@media screen and (max-width: 900px) {
+  .signals-block-main {
+    margin: 12vh 5% 0 7%;
+  }
+  .signals-block {
+    width: 80%;
+    margin: 15vh 0 0 10%;
+  }
+  .signals-block-main-post {
+    width: 46%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .signals-block-main-post {
+    width: 90%;
+  }
+  .signals-block-main-data,
+  .signals-block-main-name {
+    font-size: var(--med_text) !important;
+  }
+}

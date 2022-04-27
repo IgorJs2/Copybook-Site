@@ -1,0 +1,306 @@
+.progress-block {
+  width: 90vw;
+  margin: 10vh 3.5vw 0 6.5vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.progress-block hr {
+  width: 95%;
+  margin: 0 2.5%;
+}
+
+.progress-block-first {
+  width: 90vw;
+  height: 50vh;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--big_text);
+  line-height: 38px;
+  background-color: #6093c1;
+  border-radius: 25px;
+  color: #ffffff;
+}
+
+.progress-block-second {
+  width: 90vw;
+  height: 37vh;
+  margin-top: 1vh;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--small_text);
+  background-color: #6093c1;
+  border-radius: 25px;
+  color: #ffffff;
+}
+
+.progress-block-first_text,
+.progress-block-second_text {
+  width: 100%;
+  padding-top: 0.5%;
+  padding-left: 5%;
+  text-align: left;
+  display: flex;
+}
+
+.progress-block-first_text {
+  width: 100%;
+}
+
+.progress-block-second_text-choose {
+  height: 5vh;
+  font-size: var(--med_text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.progress-block-second_text .bx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: var(--med_text);
+  cursor: pointer;
+}
+
+.progress-block-modal {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  left: 9%;
+  margin-top: 0.2%;
+  font-size: var(--small_text);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 25px;
+  background-color: #79bbf9;
+}
+
+.progress-block-second-search_input {
+  background-color: #5380aa;
+  color: white;
+  font-size: var(--med_text);
+  padding: 1%;
+  border: none;
+  width: 15%;
+  height: 5vh;
+  margin: 0 10% 0 auto;
+}
+
+.student_grades-block-element-text_first {
+  font-size: var(--small_text);
+}
+
+.student_grades-block-element-text_second {
+  font-size: var(--small_text);
+}
+
+.progress-block-modal-homework,
+.progress-block-modal-labs,
+.progress-block-modal-classwork,
+.progress-block-modal-examinations,
+.progress-block-modal-tests,
+.progress-block-modal-practical,
+.progress-block-modal-all {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.progress-block-modal-homework .bx,
+.progress-block-modal-labs .bx,
+.progress-block-modal-classwork .bx,
+.progress-block-modal-examinations .bx,
+.progress-block-modal-tests .bx,
+.progress-block-modal-practical .bx,
+.progress-block-modal-all .bx {
+  width: 15%;
+  margin-left: 10%;
+}
+
+.progress-block-modal-homework .bx {
+  color: #66d9bd;
+}
+
+.progress-block-modal-labs .bx {
+  color: #5380aa;
+}
+
+.progress-block-modal-classwork .bx {
+  color: #eac15a;
+}
+
+.progress-block-modal-examinations .bx {
+  color: #d1557a;
+}
+
+.progress-block-modal-tests .bx {
+  color: #be60df;
+}
+
+.progress-block-modal-practical .bx {
+  color: #000000;
+}
+
+.progress-block-modal-all .bx {
+  color: white;
+}
+
+.progress-block-first-all {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: left;
+  padding: 0 2%;
+  text-align: left;
+  align-items: center;
+}
+
+.progress-block-first-all span {
+  font-size: var(--big_text);
+  font-weight: 700;
+}
+
+.progress-block-first_text_left {
+  width: 50%;
+  text-align: left;
+}
+
+.progress-block-first_text_right {
+  width: 50%;
+  text-align: center !important;
+  padding-right: 5%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.progress-block-first_text-grades,
+.progress-block-first_text-attend {
+  width: 20%;
+  height: 100%;
+  font-size: var(--small_text);
+  background-color: #79bbf9;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.progress-block-second-progressAll_chart {
+  width: 95% !important;
+  height: 65% !important;
+  margin: 0% 2.5%;
+  background-color: #6093c1;
+  border-color: white;
+  color: white;
+}
+
+.student_grades-block {
+  width: 98%;
+  height: 37vh;
+  margin: 0 2.5%;
+}
+
+.student_grades-block-element {
+  width: 32%;
+  height: 25%;
+  background: #5380aa;
+  border-radius: 25px;
+  margin: 0.3% 0.2%;
+  float: left;
+  font-size: var(--small_text);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.student_grades-block-element-text {
+  width: 40%;
+  overflow: hidden;
+}
+
+.student_grades-block-element-date {
+  width: 40%;
+  overflow: hidden;
+}
+
+.student_grades-block-element-grade {
+  width: 10%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.progress-block-second {
+  overflow: hidden;
+}
+
+.progress-block .btn {
+  color: white;
+  font-size: var(--big_text);
+  margin: auto;
+}
+
+.HOMEWORK {
+  background-color: #66d9bd;
+}
+
+.LABS {
+  background-color: #79bbf9;
+}
+
+.EXAMINATIONS,
+.EXAMINATION {
+  background-color: #d1557a;
+}
+
+.TESTS,
+.TEST {
+  background-color: #be60df;
+}
+
+.CLASSWORK {
+  background-color: #eac15a;
+}
+
+.PRACTICAL {
+  background-color: #000000;
+}
+
+@media screen and (max-width: 900px) {
+  .progress-block-modal {
+    font-size: var(--big_text);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .student_grades-block-element {
+    width: 48%;
+  }
+  .progress-block-modal span {
+    font-size: var(--small_text);
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .student_grades-block-element {
+    width: 97%;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .progress-block-first {
+    font-size: var(--med_text);
+  }
+}

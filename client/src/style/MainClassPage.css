@@ -1,0 +1,636 @@
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: clamp(1rem, 5vw, 5rem);
+  background: #6093c1;
+  padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+.sidebar:hover {
+  width: clamp(4rem, 20vw, 20rem);
+}
+.sidebar .logo-details {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sidebar:hover .logo-details .hovers {
+  opacity: 0;
+  transition: all 0.1s ease;
+}
+
+.sidebar .logo-details .logo_name {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--small_text);
+  line-height: 55px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar:hover .logo-details .icon,
+.sidebar:hover .logo-details .logo_name {
+  opacity: 1;
+}
+.sidebar .logo-details #btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  transition: all 0.4s ease;
+  font-size: var(--small_text);
+  text-align: center;
+  cursor: pointer;
+}
+.sidebar:hover .logo-details #btn {
+  text-align: right;
+}
+.sidebar i {
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: var(--small_text);
+  text-align: center;
+  line-height: 60px;
+}
+
+@media (max-width: 1200px) {
+  .sidebar i {
+    padding-right: 70%;
+    transition: all 0.1s ease;
+  }
+  .sidebar:hover i {
+    padding-right: 0;
+  }
+}
+
+.sidebar .nav-list {
+  margin-top: 100px;
+  height: 100%;
+}
+.sidebar li {
+  position: relative;
+  margin: 30px 0;
+  list-style: none;
+}
+
+.sidebar .last {
+  position: relative;
+  bottom: -12%;
+}
+
+.sidebar .last-tc {
+  position: relative;
+  bottom: -9%;
+}
+
+.sidebar .last-tc-teacher {
+  position: relative;
+  bottom: -9%;
+}
+
+.sidebar li .tooltip {
+  position: absolute;
+  top: -20px;
+  left: calc(100% + 15px);
+  z-index: 3;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: var(--small_text);
+  font-weight: 400;
+  opacity: 0;
+  white-space: nowrap;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidebar li:hover .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidebar:hover li .tooltip {
+  display: none;
+}
+
+.sidebar li .a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: #6093c1;
+}
+.sidebar li .a:hover {
+  background: #5380aa;
+}
+.sidebar li .a .links_name {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--small_text);
+  line-height: 31px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+.sidebar:hover li .a .links_name {
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar li .a:hover .links_name,
+.sidebar li .a:hover i {
+  transition: all 0.5s ease;
+  background: #5380aa;
+}
+.sidebar li i {
+  height: 50px;
+  line-height: 50px;
+  font-size: var(--small_text);
+  border-radius: 12px;
+}
+.sidebar:hover li.profile {
+  width: clamp(1rem, 10vw, 10rem);
+}
+.sidebar li .profile-details {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.sidebar li img {
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.top-bar {
+  position: absolute;
+  width: 75%;
+  height: fit-content;
+  left: 8%;
+  top: 0.1%;
+  display: flex;
+}
+
+.top-bar .top-bar-name {
+  width: 30%;
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 55px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.top-bar-rate .top-bar-rate-info {
+  width: clamp(1rem, 15vw, 15rem);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #6093c1;
+  display: flex;
+  border-radius: 50px;
+  height: 8vh;
+}
+
+.top-bar-class,
+.top-bar-code,
+.top-bar-rate {
+  width: 35%;
+
+  height: 10vh;
+  justify-content: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+@media (max-width: 420px) {
+  .sidebar li .tooltip {
+    display: none;
+  }
+}
+
+.main-block {
+  width: 90vw;
+  height: 90vh;
+  margin: 11vh 3.5vw 0 6.5vw;
+  overflow: hidden;
+}
+
+.main-block-first {
+  width: 90vw;
+  height: 40vh;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--small_text);
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.main-block-second {
+  width: 90vw;
+  height: 50vh;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--small_text);
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.main-block-first-homework,
+.main-block-first-rating,
+.main-block-first-grade {
+  width: 29vw;
+  height: 40vh;
+  margin: 0 0.5vw;
+  float: left;
+  background: #6093c1;
+  border-radius: 20px;
+}
+
+.main-block-second-progress,
+.main-block-second-attendance {
+  width: 43vw;
+  height: 47vh;
+  margin: 0vh 1vw;
+  float: left;
+  background: #6093c1;
+  border-radius: 20px;
+}
+
+.main-block-first-homework-text,
+.main-block-second-progress-text,
+.main-block-second-attendance-text {
+  width: 100%;
+  display: flex;
+}
+
+.main-block-first-homework-text {
+  height: 10%;
+}
+
+hr {
+  color: white;
+  width: 80%;
+  margin: 0 10%;
+}
+
+.main-block-first-homework-text_second .bx,
+.main-block-second-progress-text_second .bx,
+.main-block-second-attendance-text_second .bx {
+  font-size: var(--med_text);
+}
+
+.main-block-first-homework-text_first,
+.main-block-second-progress-text_first,
+.main-block-second-attendance-text_first {
+  width: 50%;
+  padding-left: 10%;
+  text-align: left;
+}
+
+.main-block-first-homework-text_first {
+  width: 70%;
+  line-height: 18px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: left;
+}
+
+.main-block-first-homework-text_second,
+.main-block-second-progress-text_second,
+.main-block-second-attendance-text_second {
+  width: 50%;
+  padding-right: 10%;
+  text-align: right;
+  display: flex;
+  justify-content: right;
+}
+
+.main-block-first-homework-text_second,
+.main-block-second-progress-text_second {
+  align-items: center;
+}
+
+.main-block-first-homework-text_second {
+  width: 30%;
+}
+
+.main-block-first-homework-all {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--small_text);
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.main-block-first-homework-assigments_info {
+  width: 90%;
+  height: 40%;
+  margin: 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #5380aa;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.main-block-first-homework-assigments_info-teacher {
+  width: 90%;
+  height: 40%;
+  margin: 2% 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #5380aa;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.main-block-first-homework-assigments_info-current,
+.main-block-first-homework-assigments_info-reviewed,
+.main-block-first-homework-assigments_info-under_review,
+.main-block-first-homework-assigments_info-expired {
+  width: 50%;
+  height: 50%;
+}
+
+.main-block-first-homework-assigments_info-number,
+.main-block-first-homework-assigments_info-status {
+  height: 50%;
+}
+
+.main-block-first-rating {
+  overflow: hidden;
+}
+
+.main-block-first-homework-assigments_info .current,
+.main-block-first-homework-assigments_info-teacher .current {
+  color: #79bbf9 !important;
+}
+
+.main-block-first-homework-assigments_info .reviewed,
+.main-block-first-homework-assigments_info-teacher .reviewed {
+  color: #66d9bd !important;
+}
+
+.main-block-first-homework-assigments_info .under_review,
+.main-block-first-homework-assigments_info-teacher .under_review {
+  color: #e7ea5a !important;
+}
+
+.main-block-first-homework-assigments_info .expired,
+.main-block-first-homework-assigments_info-teacher .expired {
+  color: #d1557a !important;
+}
+
+.student_grade-block,
+.teacher-news-block {
+  width: 100%;
+  height: 80%;
+  margin-top: 2%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.student_grade-block-element,
+.teacher-news-block-element {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1% 0;
+  background-color: #79bbf9;
+  border-radius: 25px;
+  width: 90%;
+  margin: 1% 5%;
+  height: 10vh;
+}
+
+.student_rate-block {
+  width: 100%;
+  height: 80%;
+  margin-top: 2%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.student_rate-block-element {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1% 0;
+}
+
+.student_rate-block-number {
+  width: 10%;
+}
+
+.student_rate-block-name {
+  width: 70%;
+  text-align: left;
+}
+
+.student_rate-block-rate {
+  width: 20%;
+}
+
+.student_grade-block-element-text_first,
+.teacher-news-block-element-text_first {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.student_grade-block-element-grade,
+.teacher-news-block-element-grade {
+  width: 30%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.teacher-news-block-element-news {
+  width: 20%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #d1557a;
+  border-radius: 25px;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.main-block-second-progress-avarage {
+  text-align: left;
+  padding: 2% 5%;
+}
+
+.main-block-second-progress-avarage span {
+  font-size: var(--med_text);
+  font-weight: 600;
+}
+
+.main-block-second-progress-chart {
+  width: 90% !important;
+  height: 70% !important;
+  margin: 0% 5%;
+  background-color: #6093c1;
+  border-color: white;
+}
+
+.main-block-second-attedance-avarage {
+  text-align: left;
+  padding: 2% 5%;
+}
+
+.main-block-second-attedance-avarage span {
+  font-size: var(--med_text);
+  font-weight: 600;
+}
+
+.main-block-second-attendance-chart {
+  width: 90% !important;
+  height: 70% !important;
+  margin: 0% 5%;
+  background-color: #6093c1;
+  border-color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .sidebar {
+    visibility: hidden;
+  }
+  .sidebar .nav-list {
+    margin: 0;
+  }
+  .sidebar ul li a span,
+  .sidebar ul li a .bx {
+    font-size: var(--med_text) !important;
+  }
+  .mobile-btn {
+    display: initial;
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    width: 10vw;
+    height: 10vh;
+    z-index: 100;
+  }
+  .mobile-btn .bx {
+    font-size: var(--big_text);
+    color: white;
+  }
+  .top-bar-name {
+    display: none !important;
+  }
+  .main-block {
+    height: fit-content;
+  }
+  .main-block-second {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: fit-content;
+  }
+  .main-block-second-progress,
+  .main-block-second-attendance {
+    width: 90%;
+
+    margin: 1% 5%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .main-block-first {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: fit-content;
+  }
+  .main-block-first-homework,
+  .main-block-first-rating,
+  .main-block-first-grade {
+    width: 100%;
+    margin: 1% 5%;
+  }
+  .main-block-first,
+  .main-block-second,
+  .main-block-first .main-block-first-homework-all {
+    font-size: var(--med_text) !important;
+  }
+  .main-block-second-progress,
+  .main-block-second-attendance {
+    margin: 1% 0;
+    width: 100%;
+  }
+}

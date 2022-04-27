@@ -1,0 +1,238 @@
+.grade-add-block {
+  width: 93.5%;
+  height: 90vh;
+  margin: 10vh 2% 0 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grade-form-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #6093c1;
+  width: 60%;
+  height: 100%;
+  margin: 0 2.5%;
+  border-radius: 25px;
+}
+
+.grade-block-attendance,
+.grade-block-students,
+.grade-block-grade,
+.grade-block-description,
+.grade-block-date,
+.grade-block-button,
+.grade-block-date-input {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #ffffff;
+  margin: clamp(1rem, 3vw, 1rem) 0;
+}
+
+.grade-block-date {
+  margin-left: 5%;
+  width: 100%;
+}
+
+.grade-block-date-input-field,
+.grade-block-description-input,
+.grade-chooseform-attendance,
+.grade-chooseform-student,
+.grade-block-grade-input {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+}
+
+.grade-block-date-input {
+  padding-left: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.grade-block-attendance,
+.grade-block-students,
+.grade-block-description,
+.grade-block-grade,
+.grade-block-attedance {
+  margin-left: 5%;
+  width: 100%;
+}
+
+.grade-block-description-input,
+.grade-block-grade-input,
+.grade-chooseform-attendance,
+.grade-chooseform-student {
+  padding-left: 3%;
+}
+
+.grade-chooseform-attendance,
+.grade-block-date-input,
+.grade-chooseform-student,
+.grade-block-grade-input,
+.grade-block-description-input {
+  width: 95%;
+  height: 66.93px;
+  background: #5380aa;
+  border: none;
+}
+
+.grade-chooseform-student,
+.grade-chooseform-attendance {
+  display: flex;
+  justify-content: right;
+}
+
+.grade-chooseform-student .bx,
+.grade-chooseform-attendance .bx {
+  margin: 2% 2%;
+}
+
+.grade-chooseform-attendance {
+  color: black;
+  padding: 0 0;
+}
+
+.grade-block-button {
+  width: 80%;
+  height: 10%;
+  border: none;
+  text-align: center;
+  justify-content: center;
+  background: #66d9bd;
+  border-radius: 25px;
+  margin: 2% 2%;
+}
+
+.grade-block-button:hover {
+  background: #5abca5;
+}
+
+.grade-block-button:active {
+  background-color: #5abca5;
+  box-shadow: 0 5px #666;
+}
+
+.grade-popup-block {
+  width: 70vw;
+  height: 40vw;
+  border-radius: 25px;
+  background-color: #6093c1;
+}
+
+.grade-popup-button {
+  width: 8vw;
+  height: 3vw;
+  right: 1vw;
+  bottom: 1vw;
+  border: none;
+  background: #66d9bd;
+  border-radius: 25px;
+  position: absolute;
+  justify-content: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--small_text);
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.grade-popup-button:hover {
+  background: #5abca5;
+}
+
+.student-block {
+  width: 100%;
+  height: 100%;
+}
+
+.student-block-main {
+  float: left;
+  width: 12%;
+  height: 10%;
+  margin: 2% 0% 2% 2%;
+  background: #79bbf9;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1% 1%;
+}
+
+.student-block-main-name {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--small_text);
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.student_list {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.student_list_block {
+  width: 40%;
+  height: 3vw;
+  float: left;
+  margin: 1% 5%;
+  display: flex;
+  justify-content: center;
+  background: #79bbf9;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 57px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.student_list_name {
+  position: relative;
+  width: 70%;
+  overflow: hidden;
+}
+
+.student_list_block .bx {
+  margin-left: 15%;
+}
+
+@media screen and (max-width: 900px) {
+  .grade-add-block {
+    margin: 10vh 0 0 3%;
+  }
+  .grade-form-block {
+    width: 90%;
+  }
+}

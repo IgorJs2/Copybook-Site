@@ -1,0 +1,431 @@
+.homework-block {
+  width: 85%;
+  margin: 12vh 5.5% 0 9.5%;
+  height: 90vh;
+}
+
+.homework-all-text,
+.homework-viewed-text {
+  display: flex;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.homework-current-text,
+.homework-expired-text {
+  width: 30%;
+}
+
+.homework-viewed-text {
+  margin-left: 12%;
+}
+
+.homework-checking-text {
+  margin-left: 30%;
+}
+
+.homework-reviewed-text {
+  width: 40%;
+  text-align: center;
+}
+
+.homework-viewed-texts {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.homework-viewed-text,
+.homework-checking-text {
+  width: 50%;
+}
+
+.homework-assigment-text {
+  width: 40%;
+  text-align: center;
+}
+
+.homework-assigment-texts {
+  width: 40%;
+  text-align: center;
+  padding-right: 20%;
+}
+
+.homework-block-list {
+  display: flex;
+  height: 40%;
+}
+
+.homework-block-current,
+.homework-block-expired {
+  width: 100%;
+}
+
+.homework-block-checked,
+.homework-block-checking {
+  width: 50%;
+}
+
+.homework-add-button {
+  width: 20%;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  padding: 1%;
+  background: #6093c1;
+  border-radius: 25px;
+}
+
+.homework-add-button div {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.homework-block-main {
+  width: 100%;
+  height: 34vh;
+  margin: 1% 0;
+  overflow: hidden;
+}
+
+.homework-block-main .homework-block-main-div {
+  height: 100%;
+  width: 100%;
+}
+
+.homework-block-main-post {
+  float: left;
+  width: 20%;
+  max-width: 8.5vw;
+  height: 32vh;
+  background: #6093c1;
+  border-radius: 25px;
+  margin-top: 1%;
+  margin-left: 1vw;
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 1%;
+}
+
+.homework-block-main-name,
+.homework-block-main-data {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--small_text);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.homework-block-main-name {
+  height: 6vh !important;
+  background: #79bbf9;
+  border-radius: 10px;
+}
+
+.homework-block-main-data {
+  position: relative;
+  height: 6vh !important;
+  background: #66d9bd;
+  border-radius: 10px;
+}
+
+.homework-file-downloader {
+  margin: 20vh 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: var(--small_text);
+  text-decoration: none;
+  color: white;
+}
+
+.homework-block-main-st_grade {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: var(--small_text);
+  text-decoration: none;
+  color: white;
+}
+
+.homework-block-main-st_grade span {
+  width: 40%;
+  height: 40%;
+  border-radius: 50px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #66d9bd;
+}
+
+.file-download-component:hover {
+  background: #69a5dd;
+}
+
+.homework-viewed-text_first {
+  width: 50%;
+}
+
+.homework-viewed-text_second {
+  width: 50%;
+}
+
+.homework-block-list {
+  width: 100%;
+}
+
+.homework-block-viewed,
+.homework-block-sended {
+  float: left;
+  width: 50%;
+}
+
+.homework-block .current {
+  background-color: #eac15a;
+}
+
+.homework-block .bx {
+  color: white;
+  font-size: var(--med_text);
+  text-align: center;
+}
+
+.homework-block-main-file_block {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.homework-block-main-file {
+  height: 10vh;
+  padding: 1vw 0 0 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.homework-file-text {
+  font-size: var(--small_text);
+}
+
+.not-padding {
+  padding: 1vw 0 0 0 !important;
+}
+
+.homework-modal {
+  width: 80vw;
+  height: 80vh;
+  background-color: #69a5dd;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 100000;
+}
+
+.homework-modal-block {
+  width: 100%;
+  margin-top: 30%;
+}
+
+.homework-modal-submit,
+.homework-modal-close {
+  width: 30%;
+  height: 55%;
+  border: none;
+  border-radius: 25px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--small_text);
+  line-height: 38px;
+  color: white;
+  margin: 0 10%;
+}
+
+.homework-modal-submit {
+  background-color: #66d9bd;
+}
+
+.homework-modal-close {
+  background-color: #d1557a;
+}
+
+.homework-modal-submit:hover {
+  background-color: #57b9a1;
+}
+
+.homework-modal-close:hover {
+  background-color: #b44c6b;
+}
+
+.homework-block-main-grade {
+  height: 10vh;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--small_text);
+  line-height: 38px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.homework-block-main-input {
+  width: 100%;
+  height: 40%;
+  border: none;
+  background-color: #79bbf9;
+  color: white;
+  padding: 2%;
+  font-size: var(--small_text);
+}
+
+.homework-block-main-upload-label {
+  height: 10vh;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--small_text);
+  line-height: 38px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: -1%;
+  left: 2%;
+}
+
+.homework-block-main-upload-input {
+  display: none;
+}
+
+.homework-block-main-post .expired {
+  background-color: #d1557a;
+}
+
+.homework-block-main-grade .homework-block-main-input-text,
+.homework-block-main-input {
+  display: none;
+}
+
+.homework-block-main-file {
+  padding: 4vw 0 0 0;
+}
+
+.hover-block:hover .homework-block-main-input-text {
+  display: block;
+}
+
+.hover-block:hover .homework-block-main-input {
+  display: block;
+}
+
+.hover-block:hover .homework-block-main-file {
+  padding: 1vw 0 0 0;
+}
+
+.hover-block:hover span {
+  display: none;
+}
+
+.hover-block:hover .homework-block-main-data {
+  background-color: #66d9bd;
+  cursor: pointer;
+}
+
+.hover-block:hover .homework-block-main-data:hover {
+  background-color: #5ec7ad;
+}
+
+.hover-block:hover .homework-block-main-data::before {
+  content: 'Submit';
+}
+
+@media screen and (max-width: 1300px) {
+  .homework-block-main-post {
+    width: 30%;
+    max-width: 13vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .homework-block-main-post {
+    width: 50%;
+    max-width: 18vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .homework-block {
+    margin: 12vh 5% 0 7%;
+  }
+  .homework-assigment-texts {
+    display: none;
+  }
+  .homework-add-button {
+    position: relative;
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .homework-block-main-post {
+    width: 80%;
+    max-width: 30vw;
+    margin: 2% 0;
+  }
+  .homework-block-sended,
+  .homework-block-viewed,
+  .homework-block-current,
+  .homework-block-checked,
+  .homework-block-expired {
+    margin-left: 7.5%;
+  }
+}

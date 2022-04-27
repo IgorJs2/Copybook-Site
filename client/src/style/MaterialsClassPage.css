@@ -1,0 +1,218 @@
+.material-container {
+  width: 85%;
+  margin: 12vh 5.5% 0 9.5%;
+  height: 90vh;
+}
+
+.material-all-text {
+  display: flex;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.material-add-button {
+  width: 20%;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  padding: 1%;
+  background: #6093c1;
+  border-radius: 25px;
+}
+
+.material-add-button div {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.materials-block-main {
+  width: 100%;
+  height: 32vh;
+  min-height: 32vh;
+  margin: 0.7% 0;
+  overflow: hidden;
+}
+
+.materials-block-main-post {
+  float: left;
+  width: 20%;
+  max-width: 8.5vw;
+  height: 32vh;
+  background: #6093c1;
+  border-radius: 25px;
+
+  margin-left: 1vw;
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 1%;
+}
+
+.material-viewed-text {
+  margin-left: 17.5%;
+  display: flex;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.material-materials-text {
+  width: 50%;
+  text-align: left;
+  margin-right: 10%;
+}
+
+.material-current-text {
+  width: 50%;
+  padding-right: 1%;
+  text-align: center;
+}
+
+.material-materials-text-teacher {
+  text-align: center;
+  width: 70%;
+  margin: 0 20% 0 30%;
+}
+
+.materials-block-main-name,
+.materials-block-main-data {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--small_text);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.materials-block-main-name {
+  height: 6vh !important;
+  background: #79bbf9;
+  border-radius: 10px;
+}
+
+.materials-block-main-data {
+  position: relative;
+  height: 6vh !important;
+  background: #66d9bd;
+  border-radius: 10px;
+}
+
+.file-download-component:hover {
+  background: #69a5dd;
+}
+
+.materials-file-downloader {
+  margin: 20vh 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: var(--small_text);
+  text-decoration: none;
+  color: white;
+}
+
+.materials-block-main-file {
+  height: 20vh;
+  padding: 1vw 0 0 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.materials-block-main-file .bx {
+  height: 10vh;
+  padding: 1vw 0 0 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.material-show {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.material-show i {
+  position: fixed;
+  bottom: 1%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 2vw;
+  height: 2vh;
+  font-size: 50px;
+  color: white;
+}
+
+.materials-block-main-post .current {
+  background-color: #eac15a;
+}
+
+.materials-block-main-post .viewed {
+  background-color: #66d9bd;
+}
+
+.materials-block-main-data .bx {
+  font-size: var(--med_text);
+}
+
+@media screen and (max-width: 1300px) {
+  .materials-block-main-post {
+    width: 30%;
+    max-width: 13vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .materials-block-main-post {
+    width: 50%;
+    max-width: 18vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .materials-block {
+    margin: 12vh 5% 0 7%;
+  }
+  .materials-add-button {
+    position: relative;
+    left: 40%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .materials-block-main-post {
+    width: 80%;
+    max-width: 30vw;
+    margin: 2% 1%;
+  }
+}

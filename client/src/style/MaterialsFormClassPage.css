@@ -1,0 +1,119 @@
+.materials-add-block {
+  position: absolute;
+  right: 1%;
+  bottom: 0px;
+  width: 93.5%;
+  height: 87%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.materials-form-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #6093c1;
+  width: 50%;
+  height: fit-content;
+  border-radius: 25px;
+}
+
+.materials-block-name,
+.materials-block-button,
+.materials-block-name-input,
+.materials-block-file {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #ffffff;
+  margin-bottom: 3%;
+}
+
+.materials-block-name {
+  position: relative;
+  margin-left: 5%;
+  width: 100%;
+}
+.materials-block-name-input {
+  padding-left: 2%;
+}
+
+.materials-block-button {
+  margin-top: 5%;
+}
+
+.materials-block-file {
+  margin-top: 3%;
+}
+
+.materials-block-name-input,
+.materials-block-file {
+  width: 95%;
+  height: 66.93px;
+  background: #5380aa;
+  border: none;
+}
+
+.materials-block-file-button {
+  position: relative;
+  background: #5380aa;
+  border: none;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--med_text);
+  line-height: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: #ffffff;
+  width: 70%;
+  top: 0;
+  right: -30%;
+}
+
+.materials-file-input {
+  position: relative;
+  font-size: var(--med_text);
+}
+
+.materials-block-file {
+  justify-content: left;
+  text-align: center;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+.materials-block-button {
+  width: 90%;
+  height: 8vh;
+  border: none;
+  text-align: center;
+  justify-content: center;
+  background: #66d9bd;
+  border-radius: 25px;
+  margin: 2% 0;
+}
+
+.materials-block-button:hover {
+  background: #5abca5;
+}
+
+.materials-block-button:active {
+  background-color: #5abca5;
+  box-shadow: 0 5px #666;
+}
+
+@media screen and (max-width: 900px) {
+  .materials-form-block {
+    width: 80% !important;
+  }
+}
