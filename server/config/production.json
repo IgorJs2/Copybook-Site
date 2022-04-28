@@ -1,6 +1,6 @@
 {
   "port": 3001,
   "jwtSecret": "copybook",
-  "mongoURI": "mongodb+srv://developer:admin@copybookdb.cgwbp.mongodb.net/copybookDB?retryWrites=true&w=majority",
+  "mongoURI": "Your URI",
   "baseUrl": "http://localhost:3001"
 }
