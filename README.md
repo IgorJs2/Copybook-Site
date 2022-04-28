@@ -17,10 +17,10 @@ git clone https://github.com/IgorJs2/Copybook-Site.git
 - Install dependencies
 
 ```
-npm run install
+npm run modules
 ```
 
-- Go to /server/config/production.json and set your MongoURI
+- Go to /server/config/default.json and set your MongoURI
 
 - Run site by command
 
