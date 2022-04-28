@@ -4,8 +4,7 @@
   "description": "Copybook WEB",
   "main": "copybook.js",
   "scripts": {
-    "server": "nodemon copybook.js",
-    "start": "npm run server"
+    "server": "node copybook.js"
   },
   "keywords": [
     "full-stack",

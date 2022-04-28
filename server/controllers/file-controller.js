@@ -1,4 +1,4 @@
-const FileService = require('../service/File-service')
+const FileService = require('../service/file-service')
 var contentDisposition = require('content-disposition')
 const fs = require('fs')
 

@@ -1,4 +1,4 @@
-const MaterialService = require('../service/Material-service')
+const MaterialService = require('../service/material-service')
 
 class MaterialController {
   async cr_material(req, res) {

@@ -1,4 +1,4 @@
-const StatusService = require('../service/Status-service')
+const StatusService = require('../service/status-service')
 
 class StatusController {
   async st_status(req, res) {

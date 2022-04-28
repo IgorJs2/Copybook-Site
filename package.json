@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build --prefix client && npm run start",
+    "build": "npm run build --prefix client",
     "modules": "cd server && npm install && cd ../client && npm install",
-    "start": "npm run start --prefix server"
+    "start": "npm run build && npm run server --prefix server"
   },
   "author": "Igor Urmach",
   "license": "ISC"

@@ -16,15 +16,14 @@ app.use(
 )
 app.set('view engine', 'ejs')
 
-const mongoURI =
-  'mongodb+srv://developer:admin@copybookdb.cgwbp.mongodb.net/copybookDB?retryWrites=true&w=majority'
+const mongoURI = config.get('mongoURI')
 
 app.use('/api', require('./routes/index.routes'))
 
-app.use('/', express.static(path.join('client', 'build')))
+app.use('/', express.static(path.join('..', 'client', 'build')))
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve('client', 'build', 'index.html'))
+  res.sendFile(path.resolve('..', 'client', 'build', 'index.html'))
 })
 
 const PORT = process.env.PORT || 3001

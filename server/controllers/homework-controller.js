@@ -1,4 +1,4 @@
-const HomeworkService = require('../service/Homework-service')
+const HomeworkService = require('../service/homework-service')
 
 class HomeworkController {
   async cr_homework(req, res) {
