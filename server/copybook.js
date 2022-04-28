@@ -13,22 +13,21 @@ app.use(
   express.json({
     extended: true,
   }),
-)
+) //copybookserver12-gmailcom/copybook
 app.set('view engine', 'ejs')
 
-const mongoURI = config.get('mongoURI')
+const mongoURI =
+  'mongodb+srv://developer:admin@copybookdb.cgwbp.mongodb.net/copybookDB?retryWrites=true&w=majority'
 
 app.use('/api', require('./routes/index.routes'))
 
-if (process.env.NODE_ENV === 'production') {
-  app.use('/', express.static(path.join('..', 'client', 'build')))
+app.use('/', express.static(path.join('client', 'build')))
 
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve('..', 'client', 'build', 'index.html'))
-  })
-}
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve('client', 'build', 'index.html'))
+})
 
-const PORT = config.get('port') || 3001
+const PORT = process.env.PORT || 3001
 
 async function start() {
   try {

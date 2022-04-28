@@ -3,6 +3,7 @@
 /workspace.xml
 # Editor-based HTTP Client requests
 /httpRequests/
-/node_modules
-node_modules/
+# /node_modules
+# node_modules/
 cloc-1.90.exe
+.vercel

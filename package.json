@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install": "cd server && npm install && cd ../client && npm install",
+    "build": "npm run build --prefix client",
+    "modules": "cd server && npm install && cd ../client && npm install",
     "start": "npm run prod --prefix server"
   },
   "author": "Igor Urmach",

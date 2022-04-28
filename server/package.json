@@ -5,10 +5,10 @@
   "main": "copybook.js",
   "scripts": {
     "server": "nodemon copybook.js",
-    "client": "npm run start --prefix ../client",
-    "client:build": "npm run build --prefix ../client",
-    "dev": "cross-env NODE_ENV=development concurrently \" npm run server \" \" npm run client\"",
-    "prod": "cross-env NODE_ENV=production npm-run-all client:build -s server"
+    "client": "npm run start --prefix client",
+    "build": "npm run build --prefix client",
+    "modules": "cd client && npm install && cd .. && npm install",
+    "start": "npm run server"
   },
   "keywords": [
     "full-stack",
