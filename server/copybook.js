@@ -13,7 +13,7 @@ app.use(
   express.json({
     extended: true,
   }),
-) //copybookserver12-gmailcom/copybook
+)
 app.set('view engine', 'ejs')
 
 const mongoURI =
