@@ -1,8 +1,6 @@
 # Copybook Site MERN
 Site for distance learning designed and developed using React | Express | Mongodb | mongoose.js | Node.js | ES6 features
 
-## [www.copybook.com](http://copybook.com/)
-
 
 # Pre-reqs
 To build and run this app locally you will need a few things:
